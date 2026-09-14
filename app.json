@@ -4,7 +4,7 @@
     "slug": "ad-kaikei",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./public/icon.png",
     "scheme": "adkaikei",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -14,18 +14,19 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/icon.png"
+        "foregroundImage": "./public/icon.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/icon.png",
+      "favicon": "./public/icon.png",
       "pwa": {
         "name": "AD会計",
         "shortName": "AD会計",
-        "icon": "./assets/images/icon.png"
+        "icon": "./public/icon.png",
+        "manifest": "./public/manifest.json"
       }
     },
     "plugins": [
@@ -33,7 +34,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./public/icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",
